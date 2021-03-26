@@ -42,11 +42,11 @@ class PageNav extends StatefulWidget {
 }
 
 class _PageNavState extends State<PageNav> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
   final List<Widget> _page = <Widget>[
     Home(),
     FollowList(),
-    CardPick(),
+    // CardPick(),
     NotifiPage(),
     Personal()
   ];
@@ -68,7 +68,7 @@ class _PageNavState extends State<PageNav> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "論壇"),
           BottomNavigationBarItem(icon: Icon(Icons.widgets), label: "追蹤列表"),
-          BottomNavigationBarItem(icon: Icon(Icons.content_copy), label: "抽卡"),
+          // BottomNavigationBarItem(icon: Icon(Icons.content_copy), label: "抽卡"),
           BottomNavigationBarItem(icon: Icon(Icons.notifications), label: "通知"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "個人"),
         ],

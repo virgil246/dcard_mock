@@ -1,3 +1,4 @@
+import 'package:dcard_mock/Method/DcardAPI.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -36,7 +37,16 @@ class Home extends StatelessWidget {
           },
           body: TabBarView(
             children: [
-              Container(),
+              Center(
+                  child: Container(
+                child: ElevatedButton(
+                  child: Text("13"),
+                  onPressed: () {
+                    var api = DcardApi();
+                    api.GetPosts();
+                  },
+                ),
+              )),
               Container(),
               Container(),
             ],
